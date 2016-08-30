@@ -1,0 +1,573 @@
+/*
+Theme Name: Checkout
+Theme URI: http://demo.olympusthemes.com/checkout/
+Author: Danny Cooper
+Author URI: http://dannycooper.com
+Description:
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: maillard-pro
+
+Tags: one-column, two-columns, featured-images, full-width-template, rtl-language-support, threaded-comments, custom-menu, custom-header, custom-background
+
+Checkout WordPress Theme, Copyright 2016 Danny Cooper
+This theme, like WordPress, is licensed under the GPL.
+*/
+
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    color: #292929;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	margin-bottom: 1rem
+}
+
+a {
+	color: #0d842b
+}
+
+.site-title a {
+	color: #313131
+}
+
+.site-title,
+.entry-title {
+    font-size: 36px;
+}
+
+p {
+    margin: 0 0 1rem;
+}
+
+.menu-primary {
+    background: #232323;
+}
+
+.menu-primary .menu {
+    border: 0;
+}
+.menu-primary .menu li a {
+    color: #c4c4c4;
+	padding: 16px 16px 13px;
+	border-bottom: 3px solid #232323;
+}
+
+.menu-primary .menu li.current_page_item a,
+ .menu-primary .menu li a:hover {
+	border-bottom: 3px solid #15ab15;
+}
+
+.menu-primary ul {
+    text-align: center;
+}
+
+.site-header {
+	padding: 0
+}
+
+
+.site-branding {
+    text-align: center;
+}
+
+.site-title {
+    line-height: 1;
+	margin-bottom: .5rem;
+	letter-spacing: -.5px;
+}
+
+.site-description {
+    font-size: 17px;
+    color: #6d6d6d;
+	line-height: 1
+}
+
+.page-template-home .content, .page-template-home .sidebar {
+	border-top: 1px solid #dbdbdb;
+	padding-top: 50px;
+}
+
+.homepage-widget-area {
+	margin-bottom: 50px;
+}
+
+.widget-area-featured-post {
+    width: 970px;
+    float: left;
+}
+
+.widget-area-featured-post .widget {
+    margin-bottom: 0
+}
+
+.widget-area-featured-categories {
+    width: 170px;
+    float: right;
+}
+
+.wrap {
+    max-width: 1170px;
+}
+
+.home-post-thumbnail {
+    width: 250px;
+    float: left;
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+
+.site-content {
+	margin-top: 0
+}
+
+.content {
+    width: 770px;
+}
+
+.home-post-content {
+    width: 470px;
+    float: left;
+    margin-bottom: 1.5rem;
+	margin-top: 1rem
+}
+
+.page-template-home .site-content {
+    margin-top: 0;
+}
+
+.page-template-home .entry-title {
+    margin-bottom: 1rem;
+    font-size: 24px;
+}
+
+.page-template-home article,
+.blog article {
+    border-bottom: 1px solid #e4e4e4;
+    margin-bottom: 50px;
+}
+
+.page-template-home .moretag {
+    color: #292929;
+    border-bottom: 1px solid #292929;
+	text-decoration: none
+}
+
+.more-link {
+	text-decoration: none
+}
+
+.featured-post {
+	position: relative;
+}
+
+.featured-post-title-wrapper {
+	position: absolute;
+    bottom: 30px;
+    left: 30px;
+}
+
+.featured-post-title-heading {
+    background: #232323;
+    display: inline-block;
+    padding: 15px 20px;
+    color: #c9c9c9;
+    margin-bottom: 0;
+    font-weight: 500;
+    line-height: 1;
+	font-size: 17px;
+}
+
+.featured-post-title {
+    background: #079d46;
+    display: inline-block;
+    padding: 20px;
+    color: white;
+    font-weight: 500;
+    line-height: 1;
+	margin-bottom: 0
+}
+
+.featured-category {
+	position: relative;
+}
+
+.featured-category-title-wrapper {
+    position: absolute;
+	bottom: 10px;
+	left: 10px
+}
+
+.featured-category-title {
+    background: #079d46;
+    display: inline-block;
+    padding: 10px;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1;
+	margin-bottom: 0
+}
+
+.widget-area-featured-categories .widget {
+	margin-bottom: 30px
+}
+
+.widget-area-featured-categories .widget:last-child {
+    margin-bottom: 0px;
+}
+
+article:after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+.page-template-home article:last-child {
+border-bottom: 0
+}
+
+.maillard-social-icons {
+	float: right;
+	padding: 10px 0;
+}
+
+.maillard-social-icons a {
+	text-decoration: none
+}
+
+
+.maillard-social-icons .socicon {
+	border-radius: 500px;
+    padding: 10px;
+	background: none;
+	color: #717171 !important
+}
+
+.footer-copyright {
+    float: left;
+    text-align: left;
+	padding: 10px 0;
+}
+
+.instagram-pics.instagram-size-thumbnail li {
+	padding-bottom: 0;
+	border-bottom: 0;
+	width: 48%;
+    float: left;
+    margin-right: 4%;
+}
+
+.instagram-pics.instagram-size-thumbnail li:nth-child(2n) {
+    margin-right: 0
+}
+
+.instagram-pics.instagram-size-thumbnail li img {
+    border: 5px solid #eeeeee;
+}
+
+.primary-sidebar, .widget-title {
+	font-size: 15px
+}
+
+.primary-sidebar img {
+	margin-bottom: .5rem
+}
+
+.entry-content h1,
+.entry-content h2,
+.entry-content h3,
+.entry-content h4,
+.entry-content h5,
+.entry-content h6 {
+	margin-top: 2rem;
+	margin-bottom: 1rem
+}
+
+h6 {
+	font-size: 1rem;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+
+input[type='submit'], button {
+	background-color: #0d842b;
+	color: white;
+	border: 0 /* @TODO */
+}
+
+input[type='submit']:hover, button:hover {
+	background-color: black;
+	color: white;
+	border: 0 /* @TODO */
+}
+
+.logged-in-as a {
+	text-decoration: none
+}
+
+@media only screen and (max-width: 1170px) {
+	body {
+		padding: 0;
+	}
+
+	.wrap {
+    margin: 0 5%;
+	}
+
+	.primary-sidebar {
+	    width: 100%;
+	    float: none;
+	}
+
+	.content {
+		width: 100%;
+		float: none;
+	}
+
+	.home-post-thumbnail {
+	    width: 15%;
+	    margin-right: 5%;
+	}
+
+	.home-post-content {
+	    width: 80%;
+		margin-top: 0
+	}
+
+	.tinynav {
+		margin: 0 auto
+	}
+
+}
+
+.maillard-instagram-widget-link, .maillard-instagram-widget-link a {
+	background: url('http://instagramstatic-a.akamaihd.net/h1/thirdparty/images/badges/ig-badge-view-24.png/c2f23494e67d.png');
+    text-indent: -9999px;
+	cursor: pointer;
+	width: 137px;
+	height: 24px;
+}
+
+.maillard-instagram-widget-link a {
+    width: 137px;
+    height: 24px;
+	display: block;
+}
+
+@media (max-width: 1170px) {
+
+	.widget-area-featured-post {
+	    width: 100%;
+	}
+
+	.widget-area-featured-categories {
+		margin-top: 30px;
+	    width: 100%;
+	}
+
+	.widget-area-featured-categories .widget {
+	    width: 22%;
+	    float: left;
+	    margin-right: 4%;
+	}
+
+	.widget-area-featured-categories .widget:last-child {
+	    margin-bottom: 0px;
+	    margin-right: 0;
+	}
+
+	.menu-primary {
+		padding: 10px;
+	}
+
+}
+
+@media (max-width: 600px) {
+
+	.homepage-widget-area {
+		display: none
+	}
+
+}
+
+.yrecipe {
+	background: #f7f7f7;
+    padding: 40px 50px;
+	margin-top: 2rem;
+}
+
+.YUMMLY-YUM-IFRAME, #yrecipe-beacon {
+	display: none
+}
+
+#yrecipe-title {
+	font-size: 24px;
+	font-weight: 500;
+    padding-bottom: 10px;
+	border-bottom: 3px solid black;
+    margin-bottom: 30px;
+}
+
+#yrecipe-container .yrecipe-print-link {
+    padding-left: 0.5em;
+    margin-top: 8px;
+}
+#yrecipe-container .float-right, #yrecipe-container .fl-r {
+    float: right;
+}
+
+.yrecipe-print-link a {
+	background: url("http://localhost:8888/zues/wp-content/plugins/yummly-rich-recipes/images/print-icon.png") no-repeat scroll 0 1px transparent;
+	cursor: pointer;
+	padding: 0 0 0 20px;
+	display: block;
+	height: 20px;
+	font-size: 0.867em;
+	text-indent: -9999px;
+}
+
+.h-4 {
+	font-weight: bold;
+	font-size: 1.25em;
+}
+
+#yrecipe-prep-time,
+#yrecipe-cook-time,
+#yrecipe-total-time,
+#yrecipe-yield,
+#yrecipe-serving-size,
+#yrecipe-calories,
+#yrecipe-fat {
+	font-weight: 500
+}
+
+#yrecipe-prep-time span,
+#yrecipe-cook-time span,
+#yrecipe-total-time span,
+#yrecipe-yield span,
+#yrecipe-serving-size span,
+#yrecipe-calories span,
+#yrecipe-fat span {
+	font-weight: 400
+}
+
+#yrecipe-summary {
+	font-style: italic;
+}
+
+.ymeta {
+	margin-bottom: 1rem
+}
+
+.ymeta .fl-l {
+	float:left;
+	width: 50%
+}
+
+.ymeta p {
+	margin-bottom: .5rem
+}
+
+.yclear:after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+.menu-primary .menu .children li a {
+	border-bottom: 0
+}
+
+.menu-primary .menu .children li a:hover {
+	border-bottom: 0;
+	border-color: #585858
+}
+
+.page-template-no-sidebar .content {
+	margin: 0 auto;
+	border-top: 1px solid #dbdbdb;
+	padding-top: 50px;
+	float: none;
+}
+
+
+/*.site-content .wrap {
+	border-top: 1px solid #dbdbdb;
+	padding-top: 50px
+}*/
+
+.page-template-no-sidebar .site-content .wrap {
+	border-top: 0;
+	padding-top: 0
+}
+
+.entry-meta {
+	display: inline-block;
+	border-bottom: 1px solid #e8e7e7;
+	padding-bottom: 20px;
+}
+
+.archive .archive-header, .search .archive-header {
+	background: #f7f7f7;
+	padding: 40px 50px 24px;
+	border: 0;
+}
+
+.comment-subscription-form {
+	margin-bottom: 0;
+}
+
+#subscribe_comments {
+	margin-top: 16px;
+}
+
+.sidebar-content .content {
+	float: right;
+}
+.sidebar-content .sidebar {
+	float: left;
+}
+
+.no-sidebar .content {
+	width: 100%;
+	margin-right: 0
+}
+
+.site-header {
+	background: #dedede;
+	padding-bottom: 50px;
+}
+
+.site-branding {
+	width: 370px;
+	float: left;
+	background: black;
+    padding: 25px;
+}
+
+.header-nav {
+	width: 800px;
+	float: left;
+	background: gray;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+
+
+
+.header-nav > li {
+    position: relative;
+    display: inline-block;
+}
