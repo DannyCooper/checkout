@@ -3,16 +3,16 @@
 Contributors: dannycooper
 Tags: one-column, two-columns, featured-images, full-width-template, rtl-language-support, threaded-comments, custom-menu, custom-header, custom-background
 
-Version: 1.0.0
+Version: 1.1.0
 Requires at least: 4.0
-Tested up to: 4.6.0
-Stable tag: 1.0.0
+Tested up to: 4.7.1
+Stable tag: 1.1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
 
-Checkout is a beautiful WordPress Food Blog theme, that allows food bloggers to position their content, images and recipes in the best light possible.
+Checkout is a beautiful @todo.
 
 == Installation ==
 
@@ -24,22 +24,27 @@ Checkout is a beautiful WordPress Food Blog theme, that allows food bloggers to 
 
 = Does this theme support any plugins? =
 
-Maillard includes support for Infinite Scroll in Jetpack.
+Checkout includes support for Infinite Scroll in Jetpack.
 
-Maillard has been tested with the following plugins:
+Checkout has been tested with the following plugins:
 
 * Contact Form 7
+* WP Instagram Widget
 
 == Changelog ==
 
-= 1.0 - August 22, 2016 =
+= 1.1.0 - January 13, 2017 =
+* ADDED social header
+* ADDED header navigation
+
+= 1.0.0 - August 22, 2016 =
 * Initial release
 
 == Credits ==
 
 Checkout WordPress Theme bundles the following third-party resources:
 
-* Zeus Framework, (C) 2016 Danny Cooper, [GPL-2](https://github.com/DannyCooper/zeus-framework)
+* Zues Framework, (C) 2016 Danny Cooper, [GPL-2](https://github.com/DannyCooper/zeus-framework)
  * Source: https://github.com/DannyCooper/zeus-framework
 
 * normalize.css, (C) 2012-2016 Nicolas Gallagher and Jonathan Neal, [MIT](http://opensource.org/licenses/MIT)
@@ -56,9 +61,6 @@ Checkout WordPress Theme bundles the following third-party resources:
 
 * FontAwesome, (C) Dave Gandy, [SIL OFL 1.1, MIT](http://fontawesome.io/license/)
  * Source: http://fontawesome.io/
-
- * CMB2, (C) WebDevStudios, [GPL-2](http://opensource.org/licenses/gpl-2.0.php)
-  * Source: https://github.com/WebDevStudios/CMB2
 
 * Customizer_Library, (C) Devin Price, [GPL-2](http://opensource.org/licenses/gpl-2.0.php)
  * Source: https://github.com/devinsays/customizer-library

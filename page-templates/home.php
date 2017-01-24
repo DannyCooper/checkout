@@ -8,12 +8,32 @@
  */
 
 remove_action( 'zeus_content', 'zeus_loop', 10 );
-add_action( 'zeus_content', 'maillard_home_loop', 10 );
+add_action( 'zeus_content', 'checkout_home_loop', 10 );
+add_action( 'zeus_site_content_before', 'checkout_output_homepage_widgets', 5 );
 
 /**
  * @TODO
  */
-function maillard_home_loop() {
+function checkout_output_homepage_widgets() {
+
+	if ( is_active_sidebar( 'featured-post' ) || is_active_sidebar( 'featured-categories' ) ) {
+		echo '<div class="homepage-widget-area clear"><div class="wrap">';
+			echo '<div class="widget-area-featured-post">';
+				dynamic_sidebar( 'featured-post' );
+			echo '</div><!-- .widget-area-featured-post -->';
+
+			echo '<div class="widget-area-featured-categories">';
+				dynamic_sidebar( 'featured-categories' );
+			echo '</div><!-- .wrap -->';
+			echo '</div><!-- .widget-area-featured-categories -->';
+		echo '</div>';
+	}
+}
+
+/**
+ * @TODO
+ */
+function checkout_home_loop() {
 
 	$args = array(
 		'posts_per_page' => 3, // @TODO add a filter.
@@ -27,7 +47,7 @@ function maillard_home_loop() {
 
     			if ( has_post_thumbnail() ) {
                     echo '<div class="home-post-thumbnail">';
-                        the_post_thumbnail( 'homepage-blog-thumbnail' );
+                        the_post_thumbnail( 'checkout-homepage-blog-thumbnail' );
                     echo '</div>';
     			}
 
@@ -37,7 +57,7 @@ function maillard_home_loop() {
 
                     echo '<p>'.wp_trim_words( get_the_content(), 45 ).'</p>';
 
-                    echo '<p><a class="moretag" href="'.esc_url( get_permalink() ).'">Read More&hellip;</a></p>';
+                    echo '<p><a class="moretag" href="'.esc_url( get_permalink() ).'">'._e('Read More&hellip;','checkout').'</a></p>';
 
                 echo '</div>';
 
